@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .title{
+            color: green;
+        }
+
+        #menu li a {
+            color: red;
+        }
+
+        #menu li:nth-child(2) a {
+            color: yellow;
+        }
+
+        #menu2 li a {
+            color: blue;
+        }
+
+        .ads {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            display: none;
+        }
+        
+        .ads-display{
+            display: block ;
+        }
+
+    </style>
+    <h2 id="h2-01">Nội dung 1</h2>
+    <h2 id="h2-02">Nội dung 2</h2>
+    <h2 id="h2-03">Nội dung 3</h2>
+
+    <h3 class="title">Nội dung 4</h3>
+    <h3 class="title">Nội dung 5</h3>
+    <h3 class="title">Nội dung 6 </h3>
+
+    <ul id="menu">
+        <li><a class="lia" href="#">Mục 1</a></li>
+        <li><a class="lia" href="#">Mục 2</a></li>
+        <li><a class="lia" href="#">Mục 3</a></li>
+    </ul>
+
+
+    <ul id="menu2">
+        <li><a class="lia" href="#">Mục 1</a></li>
+        <li><a class="lia" href="#">Mục 2</a></li>
+        <li><a class="lia" href="#">Mục 3</a></li>
+    </ul>
+
+    <div class="div1"></div>
+    <div class="div2">
+        <b>div 2</b>div 2
+    </div>
+    <div id="dip 3" class="div3">div 3</div>
+
+
+    <!-- ta cũng có thể tự tạo thuộc tính  -->
+    <!-- và có cũng có thể lấy thuộc tính tự tạo này bằng getAttribute trong js -->
+    <div class="div4" daylathuoctinhtutao = "abc" >div 4</div>
+
+    <div class="div5" >div 5</div>
+
+    <div class="ads">
+        <img src="https://www.wordstream.com/wp-content/uploads/2021/07/persuasive-ads-coca-cola-1.jpg" alt="">
+    </div>
+
+    <button onclick="showQuangCao()"> Show quảng cáo</button>
+    <button onclick="tatQuangCao()"> Tắt quảng cáo</button>
+
+    <br>
+    <input type="text" onblur="Blur()">
+    <input type="text" class="oinput" value="this text will be yellow if you click it">
+
+    <div class="clickme">Click me</div>
+    
+    <div class="x">X</div>
+    <div>
+        <img class= "img" src="https://www.wordstream.com/wp-content/uploads/2021/07/persuasive-ads-coca-cola-1.jpg" alt="">
+    </div>
+
+    <select name="mausasc" class="color">
+        <option value="white">Trăng</option>    
+        <option value="yellow">Màu vàng</option>    
+        <option value="black">Màu đen</option>    
+    </select>
+
+    <br>
+    <button class="dojob">Click</button>
+
+
+
+    <div class="parent">
+        <div class="child-1" id="child1">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <div class="child-2">Child 2</div>
+        <div class="child-3">Child 3</div>
+    </div>
+
+    <ul class="add">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    
+    <button class="addLast">Add cuối</button>
+    <button class="addFirst">Add add đầu</button>
+
+    <button class="removeDau">Remove đầu </button>
+    <button class="removeCuoi">Remove cuối</button>
+
+
+    <div class="textcha">
+        <div class="text1">Text 1</div>
+        <div class="text2">Text 2</div>
+    </div>
+
+    <button class="replace">Thay thế text 1 bằng text khác</button>
+    <script src="dom.js"></script>
+</body>
+</html>
