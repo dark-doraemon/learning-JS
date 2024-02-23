@@ -258,7 +258,7 @@ thediv.appendChild(text); //insert text node vào thẻ div
 //hoặc đơn giản hơn ta có thẻ sử dụng innerHTML để tạo text cho thẻ
 //thediv.innerHTML = "some text";
 
-//lưu ý khi tạo 1 thẻ thì thẻ dó chỉ có thẻ add vào 1 vị trí, tức là không thẻ dùng thẻ đó để add vào nhiều vị trí khác nhau
+//lưu ý khi tạo 1 thẻ thì thẻ dó chỉ có thẻ add vào 1 vị trí, tức là không thẻ dùng thẻ đó để add vào nhiều vị trí khác nha
 document.querySelector("body").appendChild(thediv);//insert thẻ div vừa tạo vào body vào cuối
 document.querySelector("body").insertBefore(thediv, document.querySelector(".parent")) //insert trược thẻ có class là parent
 console.log(thediv);
